@@ -1,3 +1,5 @@
+// // Review: it is good. try to insert some blank line between code blocks
+//            Make sure each code block has just one function(purpose), your code will be more readable.
 // =====================================================================================
 // 
 //       Filename:  Ex02.cpp
@@ -22,10 +24,18 @@ int convert(int);
 int main()
 {
     int furlong, yards;
+    /// Inserted blank line
+
     std::cout<<"Enter distance in Furlong:";
     std::cin>>furlong;
+    /// Inserted blank line
+    
     yards = convert(furlong);
+    /// Inserted blank line
+    
     std::cout<<"The distance in yards is:"<<yards<<std::endl;
+    /// Inserted blank line
+    
     return 0;
 }
 

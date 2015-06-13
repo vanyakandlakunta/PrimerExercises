@@ -1,3 +1,5 @@
+// it is good. 1. try printf rather than cout, it will be easier in this formatting job
+//             2. what if the time is illegal? if someone input hours as 25? 
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp

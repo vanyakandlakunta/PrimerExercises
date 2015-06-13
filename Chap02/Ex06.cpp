@@ -1,3 +1,4 @@
+// it is good. the exercise requested to use double but it doesn't matter.
 // =====================================================================================
 // 
 //       Filename:  Ex06.cpp
