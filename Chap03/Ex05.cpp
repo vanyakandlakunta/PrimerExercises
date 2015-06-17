@@ -1,3 +1,18 @@
+//
+//
+//
+//   Review: Same as Ex01.
+//
+//   Learn how to format your outputed float/double:
+//   
+//   double doubleType = 121.112312313;
+//   printf("%.3lf", doubleType)    ;   121.112
+//   printf("%.1lf", doubleType)    ;   121.1
+//
+//   #include <iomanip>
+//   using namespace std;
+//   cout << fixed << setprecision(2) << doubleType ;  121.11
+//
 // =====================================================================================
 // 
 //       Filename:  Ex05.cpp
@@ -25,6 +40,8 @@
 
 #include<iostream>
 
+#include <iomanip>
+using namespace std;
 int main()
 {
     long long curWorldPopulation, curUSPopulation;
@@ -38,7 +55,6 @@ int main()
     popPercent = ((float)curUSPopulation/(float)curWorldPopulation) * 100;
     
     std::cout<<"The population of the US is "<<popPercent<<"\% of the world population."<<std::endl;
-        
     return 0;
 }
 

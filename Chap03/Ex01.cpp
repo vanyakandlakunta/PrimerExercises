@@ -1,3 +1,14 @@
+//
+//  Review: Always choose to write a function like inch2feetInch(), if you have two return value maybe you can use reference or pointer
+//
+//  a general good format for writing a function is:
+//
+//  func(IN2, IN2, ... , INOUT1, ... OUT1, OUT2) 
+//
+//  if means that the parameter inputted always are before the outputted (the ones that you want to change in the function)
+//
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01.cpp
