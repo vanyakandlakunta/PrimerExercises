@@ -56,6 +56,7 @@ int main()
     strcat(lastName, ", ");
     strcat(fullName,lastName);
     strcat(fullName,firstName);
+    strcat(fullName, "\0");
     
     std::cout<<"Here's the information in a single string: "<<fullName<<"\n";
     
