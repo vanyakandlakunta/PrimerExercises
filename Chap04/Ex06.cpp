@@ -53,16 +53,16 @@ void display(CandyBar* snack)
 
 int main()
 {
-    CandyBar *p;
+//    CandyBar *p;
     CandyBar snack[MAX_NUMBER] = {
                          {"Mocha Munch",2.3,350},
                          {"Dairy Milk",3.5,450},
                          {"Eclairs",2.4,351}  
                         };
     
-    p = &snack[0];
+  //  p = &snack[0];
     
-    display(p);
+    display(snack);
 
     return 0;
 }

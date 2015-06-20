@@ -44,16 +44,16 @@
 const int ArSize = 3, NameSize = 25;
 
 struct CandyBar
-  {
+{
       char brandName[NameSize];
       float candyWeight;
       int numOfCals;
-  };
+};
    
 void display(CandyBar*);
     
 void display(CandyBar* snack)
-   {
+{
        std::cout<<"Brand\t\tWeight\t\tNum of Calories\n";
        for(unsigned int i = 0; i < ArSize; i++ )
        {
@@ -62,10 +62,10 @@ void display(CandyBar* snack)
          
        }
        
-   }
+}
   
 int main()
- {
+{
    CandyBar* snack = new CandyBar[ArSize];
    
    for(unsigned int i = 0; i < ArSize ; i++ ) 
@@ -80,6 +80,8 @@ int main()
    }
   
   display(snack);
+  
+  delete []snack;
  
      return 0;
 }                                                                                                                                           

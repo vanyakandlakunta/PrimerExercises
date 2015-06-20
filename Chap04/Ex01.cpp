@@ -92,7 +92,7 @@ worry about the gap between a D and an F.*/
 
 int main()
 {
-    char firstName [15], lastName[10],expectedGrade,age[2];
+    char firstName [15], lastName[10],expectedGrade,age[3];
     enum grade { A, B, C, D, E, F};
     int givenGradeInt;
     grade givenGrade;
@@ -105,7 +105,7 @@ int main()
     scanf("%c",&expectedGrade);
     std::cin.get();
     printf("What is your age?");
-    std::cin.getline(age,2);
+    std::cin.getline(age,3);
     
     givenGradeInt = expectedGrade + 1; //converting the grade to it's int value and incrementing to get next grade
     givenGrade = grade(givenGradeInt); //using the new int value to get the actual grade from list of values in enum

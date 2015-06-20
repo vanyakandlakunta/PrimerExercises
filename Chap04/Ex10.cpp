@@ -32,7 +32,7 @@ const int MAX_NUMBER = 3;
 
 using namespace std;
 
-float CalculateAverage(array<float,MAX_NUMBER> time)
+float CalculateAverage(array<float,MAX_NUMBER> &time)
 {
    float avg = 0.0;
    
@@ -46,14 +46,14 @@ float CalculateAverage(array<float,MAX_NUMBER> time)
    return avg;
 }
 
-void Display(float avg, array<float,MAX_NUMBER> time)
+void Display(float avg, array<float,MAX_NUMBER> &time)
 {
     cout<<"The timings are:";
     for(unsigned int i = 0; i < MAX_NUMBER; i++)
     {
         cout<<time[i]<<"\t";
     }
-    cout<<"\n Average time is: "<<avg<<"\n";
+    cout<<"\nAverage time is: "<<avg<<"\n";
 }
 
 int main()

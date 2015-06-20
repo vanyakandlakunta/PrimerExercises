@@ -41,7 +41,7 @@
  * tion. Use cin (or its methods) and cout .*/
 
 #include<iostream>
-const int arSize = 25,arSize1 = 2;
+const int arSize = 25;
 struct Pizza
 {
     char companyName[arSize];
@@ -68,10 +68,10 @@ int main()
   std::cin.getline(user.companyName,arSize);
   std::cout<<"Enter diameter of pizza: ";
   std::cin>>user.pizzaDia;
-  std::cin.get();  
+ // std::cin.get();  
   std::cout<<"Enter weight of pizza: ";
   std::cin>>user.pizzaWeight;
-  std::cin.get();
+ // std::cin.get();
 
   display(user);
 

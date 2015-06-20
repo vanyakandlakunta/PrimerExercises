@@ -52,10 +52,10 @@ int main()
     std::cout<<"Enter your last name:";
     std::cin.getline(lastName,15);
     
-    char* fullName = new char[(strlen(firstName)+strlen(lastName))];
-    strcat(lastName , ", ");
-    strcat(lastName,firstName);
-    strcpy(fullName,lastName);
+    char* fullName = new char[(strlen(firstName)+strlen(lastName)+strlen(", "))];
+    strcat(lastName, ", ");
+    strcat(fullName,lastName);
+    strcat(fullName,firstName);
     
     std::cout<<"Here's the information in a single string: "<<fullName<<"\n";
     
