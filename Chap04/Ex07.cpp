@@ -1,3 +1,20 @@
+//
+// Review: arSize1 was not used, remove it
+//
+// You don't need a 
+//
+//      cin.get()
+//
+// after a normal 
+//
+//      cin>>
+//
+// cin.get() will read in one character, sometimes people use it 
+// to remove the '\t' '\n' or ' ' in the input scream
+//
+// However, by default, "cin>>" ignore these characters. 
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp

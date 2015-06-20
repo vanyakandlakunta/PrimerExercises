@@ -1,3 +1,10 @@
+//
+//Review
+// When you pass a big object, use reference!! it will make it run faster
+//
+// I know here it is just a small object. But it should be a custom to 
+// use reference for all the c++ container. 
+//
 // =====================================================================================
 // 
 //       Filename:  Ex010.cpp

@@ -1,3 +1,21 @@
+//
+//
+//
+// Review: IMPORTANT!
+//
+// 1. 
+//    char* fullName = new char[(strlen(firstName)+strlen(lastName))];
+//
+//    fullName will store firstName+lastName+","+" "+'\0'
+//
+//    Make sure you understand this!!! It is really important. 
+//    Ping me that you see this, or I will ping you when I review chapter 5. 
+//
+// 2. You try to allocate enough space for full name, but you use 
+//    lastname to buffer it. Then it is meaningless to allocate in runtime.
+//    Because lastname may overflow.
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex03.cpp

@@ -1,3 +1,11 @@
+//
+// Review:
+// don't need to buffer pointer in "p"
+//
+// Use 
+//     display(snack);
+//
+// Later you need to be clear about array and pointer
 // =====================================================================================
 // 
 //       Filename:  Ex06.cpp

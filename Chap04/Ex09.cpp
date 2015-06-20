@@ -1,3 +1,25 @@
+// Review: 
+//
+// 1. IMPORTANT!!!!
+//  you didn't delete the array! please ping me about how you delete it. 
+//
+// 2. Your indent 
+//     instead of 
+//          struct CandyBar
+//              {
+//
+//              }
+//
+//     do 
+//          struct CandyBar
+//          {
+//
+//          }
+//
+// the "{" is on the same level as the struct name 
+//
+// 3. same problem about "get()"
+//
 // =====================================================================================
 // 
 //       Filename:  Ex09.cpp

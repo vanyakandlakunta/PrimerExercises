@@ -1,3 +1,62 @@
+//
+//
+//
+//
+//  The age should have two characters. so you need to use cin.getline(age, 3). 
+//
+//  and you should declare 
+//        
+//         char age[3];
+//
+//  C++ Reference:
+//  http://www.cplusplus.com/reference/istream/istream/getline/
+//  
+//  n parameter:
+//  Maximum number of characters to write to s (including the terminating null character).
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01.cpp
@@ -53,7 +112,8 @@ int main()
     
     printf("Name: %s , %s\n",lastName,firstName);
     printf("Grade: %c\n",givenGrade);
-    printf("Age: %s\n",age);
+    printf("Age: %s %d\n",age);
+
 
     return 0;
     
