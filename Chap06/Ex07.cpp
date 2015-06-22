@@ -32,9 +32,10 @@
 #include<string.h>
 #include<ctype.h>
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
     char word[15];
     int vowels = 0,consonants = 0,none = 0;
     

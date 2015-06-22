@@ -19,9 +19,10 @@
 #include<fstream>
 #include<iostream>
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
 
     char ch, line[100] = "Count the characters in this file";
     int count = 0;

@@ -32,6 +32,8 @@
 
 const int THRESHOLD = 10000;
 
+using namespace std;
+
 struct ContDetails
 {
     char name[25];
@@ -40,7 +42,6 @@ struct ContDetails
 
 int main()
 {
-    using namespace std;
     
     int numContributors,countGP = 0,countRem = 0;
     string name;

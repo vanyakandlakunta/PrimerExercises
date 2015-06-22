@@ -35,9 +35,10 @@
 const int NUM = 3;
 const int THRESHOLD = 10000;
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
 
     string name;
     long int donation;

@@ -36,9 +36,10 @@
 
 #include<iostream>
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
     char ch;
     int i = 1, y;
 

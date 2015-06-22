@@ -35,9 +35,10 @@ const int TEN_K = 10000;
 const int TWENTY_K = 20000;
 const int THIRTYFIVE_K = 35000;
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
     float income, temp5k = 0.0,temp10k = 0.0,temp20k = 0.0, valueGTemp35k = 0.0,valueTemp10k = 0.0,valueTemp20k = 0.0,valueTemp5k = 0.0;
     float totalTax = 0.0;
 

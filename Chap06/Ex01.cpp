@@ -20,9 +20,10 @@
 #include<iostream>
 #include<ctype.h>
 
+using namespace std;
+
 int main()
 {
-    using namespace std;
     char ch, chNew;
     
     cout<<"Enter input:";

@@ -66,6 +66,8 @@ struct bop {
 const int NUM_PEOPLE = 3;
 const int SIZE = 30;
 
+using namespace std;
+
 struct bop 
 {
     char fullname[SIZE]; // real name
@@ -76,7 +78,6 @@ struct bop
 
 int main()
 {
-    using namespace std;
     
     char ch;
     int i = 1,choice,y;
