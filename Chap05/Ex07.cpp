@@ -1,3 +1,11 @@
+//
+// Review:
+//         std::cout<<"Please enter the make:";
+//         std::cin>>deets[carNumber].make, ARRAY_SIZE; 
+//
+//         what is this cin line means? it is a new feature in c11? 
+//         I think here you need a getline which you used very often 
+//         in chapter 4.
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp

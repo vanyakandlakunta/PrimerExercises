@@ -1,3 +1,5 @@
+//
+// Review: put "using namespace std" outside the main function is better choice. 
 // =====================================================================================
 // 
 //       Filename:  Ex01.cpp

@@ -1,3 +1,37 @@
+//
+// Review: An array will be passed as a pointer to a function, 
+//         You don't need to make it reference. 
+//
+//   int CalCulateSum(int (&numBooks)[TOTAL_MONTHS])   #1
+//
+//   can be 
+//
+//   int CalCulateSum(int *numBooks)    #2
+//
+//   or
+//   int CalCulateSum(int numBooks[])   #3
+//
+//   Compiler will generate the same code for all of these. even if you pass an "array" 
+//   using style #3
+//
+//   think about this the output of the following:
+//
+//   int cal(int *arr) {
+//      printf("%d\n", sizeof(arr);
+//   }
+//   int cal2(int arr[]) {
+//      printf("%d\n", sizeof(arr);
+//   }
+//   int main() {
+//      int arr[10];
+//      
+//      printf("%d\n", sizeof(arr);
+//      cal(arr);
+//      cal2(arr);
+//   }
+//
+//   ping me by these output.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex05.cpp

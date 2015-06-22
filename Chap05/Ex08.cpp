@@ -1,3 +1,14 @@
+//
+// Review: 1. INDENT
+// a trick to do indent actomatically in vim:
+//
+//  in  normal mode: press:  
+//      gg
+//      10000==
+//
+//
+// 2. They said not counting "done".  
+//
 // =====================================================================================
 // 
 //       Filename:  Ex08.cpp
