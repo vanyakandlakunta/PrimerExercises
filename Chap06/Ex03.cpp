@@ -50,7 +50,7 @@ using namespace std;
 int main()
 {
     char ch;
-    int i = 1, y;
+    int i = 1;
 
     cout<<"Please enter one of the following choices:"<<endl;
     cout<<"c) Carnivore \t p) Pianist"<<endl;
@@ -62,20 +62,25 @@ int main()
         cin>>ch;
         switch(ch)
         {
-            case 'c': cout<<"A lion is a carnivore"<<endl;
-                      i=0;
-                      break;
-            case 'p':cout<<"A person who plays piano is a pianist"<<endl;
-                     i=0;
-                     break;
-            case 't':cout<<"A maple is a tree"<<endl;
-                     i=0;
-                     break;
-            case 'g':cout<<"Hide and Seek is a game"<<endl;          
-                     i=0;
-                     break;
-            default: cout<<"Please enter one of the following: c,p,t or g";
-                     break;
+            case 'c': 
+                cout<<"A lion is a carnivore"<<endl;
+                i=0;
+                break;
+            case 'p':
+                cout<<"A person who plays piano is a pianist"<<endl;
+                i=0;
+                break;
+            case 't':
+                cout<<"A maple is a tree"<<endl;
+                i=0;
+                break;
+            case 'g':
+                cout<<"Hide and Seek is a game"<<endl;          
+                i=0;
+                break;
+            default:
+                cout<<"Please enter one of the following: c,p,t or g";
+                break;
         }          
     }
     return 0;
