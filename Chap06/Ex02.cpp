@@ -28,6 +28,7 @@
 
 #include<iostream>
 #include<array>
+#include<ctype.h>
 
 const int SIZE = 10;
 using namespace std;
@@ -59,14 +60,23 @@ int main()
     
     double sum = 0.0, avg;
     array<double,SIZE> donation;
-    int i = 0;
+    int i = 1;
     
     cout<<"Enter values:";
+    cin>>donation[0];
+    sum = sum + donation[0];
     
-    while(i < SIZE && cin>>donation[i])
+    if(!(isalpha(donation[0])))
+    {     
+        while(i < SIZE && cin>>donation[i])
+        {
+            sum = sum + donation[i];
+            i++;
+        }
+    }
+    else
     {
-        sum = sum + donation[i];
-        i++;
+        i = 0;
     }
     
     if(i == 0)
@@ -75,7 +85,7 @@ int main()
     }
     else
     {
-        avg = (sum/SIZE);
+        avg = (sum/i);
         LargerNumList(donation , avg);
     }
     
