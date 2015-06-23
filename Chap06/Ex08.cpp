@@ -27,16 +27,19 @@ using namespace std;
 int main()
 {
 
-    char ch, line[100] = "Count the characters in this file";
+    char ch, line[100] = "Count the characters in this file",filename[30] ;
     int count = 0;
     
+    cout<<"Enter filename:";
+    cin.getline(filename,30);
+
     ofstream fout;
-    fout.open("CountCharacters.txt");
+    fout.open(filename);
     fout<<line<<endl;   
     fout.close();
     
     ifstream fin;
-    fin.open("CountCharacters.txt");
+    fin.open(filename);
     if (!fin.is_open())
     {
         cout<<"Error!!!!!!";
