@@ -1,3 +1,7 @@
+// INDENT (use "==" in vim, "==" will indent one line "100==" will indent 100 lines from this line) 
+//
+// add a "default" for switch
+//
 // =====================================================================================
 // 
 //       Filename:  Ex04.cpp

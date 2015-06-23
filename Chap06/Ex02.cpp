@@ -1,3 +1,11 @@
+//
+// What will the output for this input case:
+//
+//  10
+//  a
+//
+// your program gives 1, but it should be 10.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex02.cpp

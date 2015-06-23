@@ -1,3 +1,12 @@
+// case 'c':cout
+//
+// better INDENT:
+//
+// case 'c':
+//     cout
+//
+// y is a variable that you haven't used.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex03.cpp

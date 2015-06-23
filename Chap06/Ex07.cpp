@@ -1,3 +1,11 @@
+//
+// Your program shouldn't count 'q'
+//
+// you used switch for vowels, but for all the vowels, you will do the same thing, so
+// maybe a function call isvowel() is a better choice.
+//
+// Think about cutting fat from now.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp

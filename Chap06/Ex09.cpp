@@ -1,3 +1,12 @@
+// Some same problems as ex06.
+//
+// 1. Don't output EOF. (EOF is actually -1, it is a return value that the os tells us
+// you reach the end of file, not a real thing). That is why your txt has a -1 at the end.
+//
+// And because of your method to deal with input. you will read this '-1' as a name. Even
+// if your program run well, it is still a small bug.
+// if they already give you the number of donators. you can use it in you input loop. 
+//
 // =====================================================================================
 // 
 //       Filename:  Ex09.cpp

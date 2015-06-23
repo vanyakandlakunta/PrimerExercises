@@ -1,3 +1,32 @@
+//
+// IMPORTANT:
+// you keep changing the variable to store the left money (temp5k, temp10k...) which makes
+// your code look choppy.
+//
+// actually, use one variable (income for example)
+// every time judge if income is zero.
+//
+// and use a array to store rate like 0.1 0.15, your code can finish calculating a tax in 
+// 5 lines:
+// double rate[] = {0, 0.1, 0.15, 0.2};
+// double amounts[] = {5000, 10000, 20000, INF(a very big integer)};
+//
+// for(int i = 0; i < 4 && income > 0;i++) {
+//      double this_amount = min(amounts[i], income);
+//      total_tax += this_amount * rate[i];
+//      income -= amounts[i];
+// }
+//
+// Sense:
+//
+// Actually you are doing loop unrolling using your hand. 
+// Next time when you face codes that seems really similar, don't try to rewrite it, try to 
+// use loop (iteration) or function.
+// Because:
+//  1. codes will be short;
+//  2. if you have a bug in one place, you may need to fix it in many place.
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex05.cpp

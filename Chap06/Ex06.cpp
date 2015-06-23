@@ -1,3 +1,14 @@
+// 1. INDENT is bad
+//
+// 2. VERY IMPORTANT: write a delete as soon as you put a new
+//
+// 3. you don't need to resize a vector after you push_back, (resize will change the size
+// but after you push_back it already change the size if it needs.)
+//
+// 4. it asks to output amounts(contribution) also. rather than store name list, how about store index 
+// in the ContDetails, it will save memory and you can get amounts also.
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex06.cpp
