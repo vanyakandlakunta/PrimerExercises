@@ -90,55 +90,64 @@ int main()
         {"Tom","Analyst","Typi",1},
         {"Bill", "Senior Programmer", "Ace", 2}
     };
-    
+
     cout<<"a. display by name\nc. display by bopname\nq. quit\nb. display by title\nd. display by preference";
     while(i)
     {    
-      cout<<"Please select an alternative:"<<endl;
-      cin>>ch;
-      switch(ch)
-      {
-        case 'a': for (y = 0; y < NUM_PEOPLE; y++)
-                  {
-                     cout<<list[y].fullname<<endl;
-                  }
-                 
-                  break;
-                  
-        case 'b': for (y = 0; y <NUM_PEOPLE; y++)
-                  {
-                      cout<<list[y].title<<endl;
-                  }
-                  break;
-                  
-        case 'c':for (y = 0; y <NUM_PEOPLE; y++)
-                  {
-                      cout<<list[y].bopname<<endl;
-                  }
-                 break;
-                
-        case 'd':for (y = 0; y <NUM_PEOPLE; y++)
-                  {
-                      choice = list[y].preference;
-                      if(choice == 0)
-                      {
-                          cout<<list[y].fullname;
-                      }
-                      else if(choice == 1)
-                      {
-                         cout<<list[y].title;
-                      }
-                      else 
-                      {
-                          cout<<list[y].bopname;
-                      }
-                  }
-                 break;
-                 
-        case 'q': cout<<"Bye!"<<endl;
-                  i = 0;
-                  break;
-      }
+        cout<<"Please select an alternative:"<<endl;
+        cin>>ch;
+        switch(ch)
+        {
+            case 'a': 
+                for (y = 0; y < NUM_PEOPLE; y++)
+                {
+                    cout<<list[y].fullname<<endl;
+                }
+
+                break;
+
+            case 'b': 
+                for (y = 0; y <NUM_PEOPLE; y++)
+                {
+                    cout<<list[y].title<<endl;
+                }
+                break;
+
+            case 'c':
+                for (y = 0; y <NUM_PEOPLE; y++)
+                {
+                    cout<<list[y].bopname<<endl;
+                }
+                break;
+
+            case 'd':
+                for (y = 0; y <NUM_PEOPLE; y++)
+                {
+                    choice = list[y].preference;
+                    if(choice == 0)
+                    {
+                        cout<<list[y].fullname;
+                    }
+                    else if(choice == 1)
+                    {
+                        cout<<list[y].title;
+                    }
+                    else 
+                    {
+                        cout<<list[y].bopname;
+                    }
+                }
+                break;
+
+            case 'q': 
+                cout<<"Bye!"<<endl;
+                i = 0;
+                break;
+            default: 
+                cout<<"Invalid alternative."<<endl;
+                break;
+
+        }
     }
 
 
