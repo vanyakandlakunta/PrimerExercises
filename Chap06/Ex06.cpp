@@ -53,70 +53,79 @@ struct ContDetails
 
 int main()
 {
-    
-    int numContributors,countGP = 0,countRem = 0;
+
+    int numContributors,countGP = 0,countRem = 0, index = 0, j = 0,p,q;
     string name;
-    
+
     cout<<"Enter the number of contributors: ";
     cin>>numContributors;
-    
+
     if(numContributors > 0)
     {
-     ContDetails* user = new ContDetails[numContributors];
-     vector<string> grandPatrons,remDonors;
-    
-     for (unsigned int i = 0; i < numContributors ; i++)
-     {
-        cout<<"Enter name:";
-        cin>>user[i].name;
-        cout<<"Enter contribution:";
-        cin>>user[i].contribution;
-        
-        if(user[i].contribution > THRESHOLD)
-        {
-            countGP++;
-            grandPatrons.push_back(user[i].name);
-            grandPatrons.resize(countGP);
-        }
-        else 
-        {
-            countRem++;
-            remDonors.push_back(user[i].name);
-            remDonors.resize(countRem);
-        }
-     }
-    
-      cout<<"Grand Patrons:"<<endl;
-      if(grandPatrons.capacity() == 0)
-       {
-        cout<<"none!";
-       }
-      else
-      {
-       for (unsigned int p = 0; p < (grandPatrons.size()); p++)
-        {
-          cout<<grandPatrons[p]<<endl;
-        }
-       }
-    
-      cout<<"Remaining Donors:"<<endl;
+        ContDetails* user = new ContDetails[numContributors];
+        vector<unsigned int> grandPatrons,remDonors;
 
-      if(remDonors.capacity() == 0)
-      {
-        cout<<"none!";
-      }
-      else
-      {
-        for (unsigned int q = 0; q < (remDonors.size()); q++)
+        for (unsigned int i = 0; i < numContributors ; i++)
         {
-            cout<<remDonors[q]<<endl;
+            cout<<"Enter name:";
+            cin>>user[i].name;
+            cout<<"Enter contribution:";
+            cin>>user[i].contribution;
+
+            if(user[i].contribution > THRESHOLD)
+            {
+                countGP++;
+                grandPatrons.push_back(i);
+            }
+            else 
+            {
+                countRem++;
+                remDonors.push_back(i);
+            }
         }
-      }
+
+        cout<<"Grand Patrons:"<<endl;
+        if(grandPatrons.capacity() == 0)
+        {
+            cout<<"none!";
+        }
+        
+        else
+        {
+            while(countGP > 0)            
+            {
+                p = grandPatrons[index];
+                cout<<user[p].name<<endl;
+                index++;
+                countGP--;
+               
+            }
+        }
+
+        cout<<"Remaining Donors:"<<endl;
+
+        if(remDonors.capacity() == 0)
+        {
+            cout<<"none!";
+        }
+        else
+        {
+            while(countRem > 0)
+            {
+                q = remDonors[j];
+                cout<<user[q].name<<endl;
+                j++;
+                countRem--;
+            }
+        }
+    delete []user;
     }
     else
     {
         cout<<"Invalid option";
     }
-return 0;
+    
+
+    return 0;
 }
 
