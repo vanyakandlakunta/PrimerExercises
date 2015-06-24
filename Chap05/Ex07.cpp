@@ -74,10 +74,11 @@ int main()
     {   
         std::cout<<"Car #"<<(carNumber + 1)<<std::endl;
         std::cout<<"Please enter the make:";
-        std::cin>>deets[carNumber].make, ARRAY_SIZE;
-        std::cout<<"Please enter the year:";
+        std::cin.getline(deets[carNumber].make,ARRAY_SIZE);
         std::cin.get();
-        std::cin>>deets[carNumber].year;
+        std::cout<<"Please enter the year:";
+        std::cin.getline(deets[carNumber].year,);
+        std::cin.get();
     }
     
     Display(deets,numCars);

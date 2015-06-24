@@ -53,7 +53,7 @@ int main()
     }
    while(strcmp(word,"done"));
 
-    std::cout<<"You entered a total of "<<countWord<<" words"<<std::endl;
+    std::cout<<"You entered a total of "<<countWord - 1<<" words"<<std::endl;
     
    return 0;
 }
