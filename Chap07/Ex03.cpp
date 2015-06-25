@@ -1,3 +1,7 @@
+//
+// function b. is just asking for calculating volumn. And want you pass by pointer.
+// Even if reference used pointer to implement. We still find sometimes use pointer
+// directly is convenient too.
 // =====================================================================================
 // 
 //       Filename:  Ex03.cpp

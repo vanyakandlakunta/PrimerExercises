@@ -1,3 +1,9 @@
+//
+// num1 and num2 are not inited. They will be random, and maybe 0. which will make you 
+// program wrong. 
+//
+// In some compiler, num1 and num2 will be inited as 0. which will spoil your program for
+// sure
 // =====================================================================================
 // 
 //       Filename:  Ex01.cpp

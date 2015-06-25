@@ -118,7 +118,7 @@ int main()
                 countRem--;
             }
         }
-    delete []user;
+        delete []user;
     }
     else
     {

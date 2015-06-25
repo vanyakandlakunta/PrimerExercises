@@ -1,3 +1,7 @@
+// IMPORTANT: 
+// Your usages on pointers are still a little messy. Check the three REVIEW I commented in 
+// the code. 
+// (search "REVIEW")
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp
@@ -46,6 +50,7 @@ double* fill_array(double ar[], int limit)
         ar[i] = temp;
         // signal to terminate
     }
+    // REVIEW 1: here should be &(ar[i]) , think about why
     return (&ar[i+1]);
 }
 // the following function can use, but not alter,
@@ -55,6 +60,12 @@ void show_array(const double ar[],double*start, double* end)
     int i = 0;
     double *p =start;
     
+    // REVIEW 2: why do you compare the value of the pointer 
+    // to judge if the pointers are the same??
+    // if should be (p != end)
+    //
+    // Think about it, and ping me 
+    //
     while((*p)!=(*end))
     {
         cout<<"Property #"<<(i+1)<<":$";
@@ -80,6 +91,7 @@ int main()
 {
     double properties[Max],factor;
     double* end = fill_array(properties, Max);
+    // REVIEW 3: start will be properties only
     double* start = end - (Max + 1);
 
     show_array(properties, start,end);

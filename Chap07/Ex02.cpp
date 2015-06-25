@@ -1,3 +1,11 @@
+// 1. Don't use unsigned int and int at the same expression. 
+//
+// i < numScores.
+// numScores is an signed, but i is unsigned. 
+// so numScores will be casted to unsigned first.
+// what if numScores = -1?
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex02.cpp

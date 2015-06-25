@@ -1,3 +1,8 @@
+// Excellent work. 
+//
+// If you really understand function ponter. You are much better than 
+// other starters.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex10.cpp
