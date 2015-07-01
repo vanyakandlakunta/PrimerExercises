@@ -38,7 +38,7 @@ const int SIZE = 10;
 float EnterInput(float score[], int &numScores)
 {
     float sum = 0.0;
-    for ( unsigned int i = 0; i < numScores; i++)
+    for (int i = 0; i < numScores; i++)
     {
         cin>>score[i];
         sum = sum + score[i];
@@ -58,7 +58,7 @@ float AvgCal(float &sum,int &numScores)
 void Display(float score[], float &avg,int &numScores)
 {
     cout<<"Scores are:";
-    for(unsigned int i = 0; i < numScores; i++)
+    for(int i = 0; i < numScores; i++)
     {
         cout<<score[i]<<"\t";
     }

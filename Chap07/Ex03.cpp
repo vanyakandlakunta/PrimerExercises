@@ -55,15 +55,15 @@ void Display1(box c)
     cout<<c.volume<<endl;
 }
 
-void Display2(box &c)
+void Display2(box *c)
 {
 
-    cout<<c.maker<<endl;
-    cout<<c.height<<endl;
-    cout<<c.width<<endl;
-    cout<<c.length<<endl;
-    c.volume = (c.length * c.width * c.height);
-    cout<<c.volume<<endl;
+    cout<<c->maker<<endl;
+    cout<<c->height<<endl;
+    cout<<c->width<<endl;
+    cout<<c->length<<endl;
+    c->volume = (c->length * c->width * c->height);
+    cout<<c->volume<<endl;
 }
 
 int main()
@@ -71,7 +71,7 @@ int main()
     box b = {"Vanya", 10.5,11.2,6.6,7.8};
 
     Display1(b);
-    Display2(b);
+    Display2(&b);
 
     return 0;
 }

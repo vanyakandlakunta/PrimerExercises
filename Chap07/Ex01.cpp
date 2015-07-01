@@ -42,7 +42,7 @@ double HarmonicMean(int &x, int &y)
 int main()
 {
     double hmean;
-    int num1, num2;
+    int num1 = 1, num2 = 1; // gave initial values to them so that it doesn't crash.
 
     while(num1 != 0 && num2!=0)
     {
