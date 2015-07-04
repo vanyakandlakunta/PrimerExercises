@@ -1,3 +1,5 @@
+// 
+// instead of doing "strlen(max)" unnecessarily. You can store the max_leng
 // =====================================================================================
 // 
 //       Filename:  Ex06.cpp

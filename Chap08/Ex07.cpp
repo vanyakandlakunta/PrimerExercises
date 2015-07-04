@@ -1,3 +1,17 @@
+// // REVIEW:
+//
+// template <typename T>
+// int SumArray(T arr[], int n)
+// {
+//     int sum = 0;  <<<======        better to be "T sum=0"
+//     
+//     cout << "template A\n";
+//     
+//     for (int i = 0; i < n; i++)
+//         sum+=arr[i];
+//     
+//     return sum;
+// }
 // =====================================================================================
 // 
 //       Filename:  Ex07.cpp
@@ -147,9 +161,3 @@ double SumArray(T* arr[], int n)
     
     return sum;
 }
-
-
-
-
-
-
