@@ -147,8 +147,11 @@ int main()
 
     show("Done!");
 
-    delete [] beany.str;
-
+    if(beany.str != NULL)
+    {
+        delete [] beany.str;
+        beany.str = NULL;
+    }
     return 0;
 }
 
