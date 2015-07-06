@@ -46,27 +46,27 @@
 
 using namespace std;
 
-void Display(char word[],int &num)
+void Display(char word[],int num = 0)
 {
-    int count;
+   static int count = 1;
     
     printf("Function with integer called.\n");
 
-    for (count = 0; count < num ; count++)
+    for (int i = 0; i < count; i++)
     {
-        printf(word);
-        printf("\n");
+        printf("%s\n",word);
+       
     }   
 
-    num++;
+    count++;
 }
 
-inline void Display(char word[])
+/*(inline void Display(char word[])
 {
     printf("The string is: ");
     printf(word);
     printf("\n");
-}
+}*/
 
 int main()
 {
