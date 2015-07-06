@@ -53,11 +53,12 @@ T maxn(T values[], int size)
 template<> char* maxn<char*>(char* values[],int size)
 {
     char* max = values[0];
-    int i;
+    int i,max_length;
 
+    max_length = strlen(max);
     for (i = (size-1); i > 0; i--)
     {
-        if((strlen(values[i])) > (strlen(max)))
+        if((strlen(values[i])) > max_length)
         {
             max = values[i];
         }
