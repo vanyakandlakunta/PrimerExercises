@@ -1,3 +1,7 @@
+// By saying reference to an object, it means "string &word".
+//
+// the function should  "converts the contents", but not only display the upper 
+//
 // =====================================================================================
 // 
 //       Filename:  Ex03.cpp

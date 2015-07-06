@@ -1,3 +1,13 @@
+// before you delete a pointer, it is better to check it you have allocated/deleted it.
+// (you need to do it when your program becomes large)
+//
+// if(beany.str != NULL) {
+//    delete [] beany.str;
+//    beany.str = NULL;
+// }
+//
+// init beany.str as NULL. so that this delete will work well
+//
 // =====================================================================================
 // 
 //       Filename:  Ex04.cpp

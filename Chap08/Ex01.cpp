@@ -1,3 +1,22 @@
+// REVIEW: 
+//
+// use a static variable inside the funciton `Display` is better solution.
+//
+// And you don't need to write too funciton.
+// write a function like:
+//
+// void Display(char word[], int num = 0) {
+//     static int cnt = 0;
+//
+//     for(int i = 0;i < cnt;i++) {
+//          printf("%s\n", word);
+//     }
+//
+//     cnt ++;
+// }
+//
+// Only need one function here.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01.cpp
