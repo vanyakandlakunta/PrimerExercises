@@ -1,3 +1,17 @@
+//
+// REVIEW: the name of a header and definition file for this header should be the same:
+//
+// Ex01_golf.h
+//
+//
+// When you have multiple files in a project, try to write a makefile 
+//
+// IMPORTANT: getting makefile skills
+// READ this:
+//  http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+//
+// and then put a makefile in this directory. ping me when you push it.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01_main.cpp

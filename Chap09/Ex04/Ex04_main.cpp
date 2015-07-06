@@ -1,3 +1,17 @@
+//
+// REVIEW: SAME as Ex01
+//
+// An optimization for getting max and min at the same time
+//
+// when you find max and min, you compare max and min with the array[i] for each i. So for array[i] and array[i+1] , you will use 4 comparation.
+//
+// But you can optimize by:
+//
+// 1. compare array[i] and array[i+1] first.
+//
+// 2. the smaller one will compare with min, the bigger one will compare with max.
+// conclusion: it only use 3 comparations to deal with array[i] and array[i+1].
+//
 // =====================================================================================
 // 
 //       Filename:  Ex04_main.cpp

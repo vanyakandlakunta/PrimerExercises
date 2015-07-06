@@ -1,3 +1,5 @@
+//
+// REVIEW: it is good
 // =====================================================================================
 // 
 //       Filename:  Ex02.cpp
@@ -99,7 +101,6 @@ void strcount(string str)
     total += count;
     cout << count << " characters\n";
     cout << total << " characters total\n";
-
 }
 
 
