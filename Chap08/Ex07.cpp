@@ -93,7 +93,7 @@ void ShowArray(T arr[], int n);
 #include <iostream>
 
 template <typename T>
-int SumArray(T arr[], int n); // template A
+T SumArray(T arr[], int n); // template A
 
 template <typename T> // template B
 double SumArray(T * arr[], int n);
@@ -137,9 +137,9 @@ int main()
 }
 
 template <typename T>
-int SumArray(T arr[], int n)
+T SumArray(T arr[], int n)
 {
-    int sum = 0;
+    T sum = 0;
     
     cout << "template A\n";
     
