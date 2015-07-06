@@ -36,15 +36,15 @@
 
 using namespace std;
 
-void ChangeCase(string* word)
+void ChangeCase(string &word)
 {
     int count;
-    int length = word->length();
+    int length = word.length();
     char letter;
 
     for (count = 0; count < length; count++ )
     {
-        letter = word->at(count);
+        letter = word.at(count);
         printf("%c",toupper(letter));
     }
     printf("\n");
@@ -60,7 +60,7 @@ int main()
     {
         if(word != "q")
         {
-            ChangeCase(&word);
+            ChangeCase(word);
             cout<<"Enter a string(q to quit):";
         }
 
