@@ -1,3 +1,22 @@
+//
+// 1. in the push function. you do :
+// top=top+1;
+// and then 
+// items[top] = item;
+//
+// which means you won't store in items[0]; it will waste a slot.
+// It is okay to waste a slot but we don't need to waste it.
+//
+// 2. BUG: even if your list is full, someone will call the "push"
+//    which will do  "top=top+1" for sure. and your function
+//    "isfull()" will fail
+//
+//
+// 3. you don't need a pop function for a link list, it is not a stack
+//
+// 4. don't do "cout" in the function "visit".
+//    you can write a "print" function and do visit(print)
+//
 // =====================================================================================
 // 
 //       Filename:  Ex08_main.cpp

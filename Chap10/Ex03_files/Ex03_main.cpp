@@ -1,3 +1,14 @@
+//
+// Review: 
+// 1. Don't use a variable SIZE as the array size. Use a constant.
+// older compilers only support constant as an array size. To make your 
+// code ore robust. 
+//
+// 2. add a "clean" rule for your makefile
+//
+// 3. add "*.o" rule in your .gitignore
+//
+//
 // =====================================================================================
 // 
 //       Filename:  Ex03_main.cpp

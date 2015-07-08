@@ -1,3 +1,29 @@
+//
+// 1. Put the static double total inside the class.
+//
+// 2. your push and pop functions have small bug.
+// (1) why do you add 2 each time? 
+//     top = top + 2;
+//     why not +1? 
+// (2) you do:
+// if(top < MAX) 
+// {
+//     top = top+2;
+//     items[top] = item;
+//     return true;
+// }
+//
+// if your top value if MAX-1; then:
+//
+// if(top < MAX)  // top  = MAX-1
+// {
+//     top = top+2;   // top = MAX+1
+//     items[top] = item;  // item[MAX+1] = ??
+//     return true;
+// }
+//
+// Review your push and pop. 
+//
 // =====================================================================================
 // 
 //       Filename:  Ex05_main.cpp
