@@ -6,5 +6,5 @@ DEPS = Ex01.h
 	$(CC) -c -o $@ $< $(CFLAGS)
 	
 Ex01: Ex01.o Ex01_main.o
-	$(CC) -o Ex01 Ex01.o Ex01_main.o -I.
+	$(CC) -o out Ex01.o Ex01_main.o -I.
 	
