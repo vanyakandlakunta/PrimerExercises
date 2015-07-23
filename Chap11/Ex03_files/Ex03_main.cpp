@@ -1,3 +1,24 @@
+// REVIEW:
+// 1. don't use builtin function "max" "min" as your variables' name.
+//
+// Once you include some files, it will cause redefinition problem
+//
+// 2. "steps" is unsigned long, why your "max" and "min" are double, they should be the same type 
+//
+// 3. You can write a funciton called "report()" 
+//
+//  report() {
+//       cout << "" << endl;
+//       fout << "" << endl;
+//  }
+//
+//            cout << " or\n" << result << endl;
+//            fout << " or\n" << result << endl;
+//            cout << "Average outward distance per step = "
+//                << result.magval()/steps << endl;
+//            fout << "Average outward distance per step = "
+//                << result.magval()/steps << endl;
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01_main.cpp

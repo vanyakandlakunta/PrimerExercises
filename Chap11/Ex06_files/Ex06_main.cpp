@@ -1,3 +1,20 @@
+// REVIEW: 
+//
+// 1. INDENT should be good. Use "==". If you don't know how to use it, ping me.
+//
+//
+// 2.  
+//
+//    if(pounds <=  s.pounds)
+//        return true;
+//    else
+//        return false;
+//
+//    you can write:
+//
+//      return pounds <= s.pounds
+//
+// 3. Other parts are really good
 // =====================================================================================
 // 
 //       Filename:  Ex06_main.cpp

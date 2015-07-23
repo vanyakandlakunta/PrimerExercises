@@ -1,3 +1,22 @@
+// REVIEW: 
+// 1. You didn't "return os" and "return is"! You will get "seg fault if you don't return it 
+// std::ostream& operator<<(std::ostream &os,Complex &c)
+// {
+//     os << "("<<c.real<<","<<c.imag<<"i)"<<endl;
+// }
+// 
+// std::istream& operator>>(std::istream &is, Complex &c)
+// {
+//     cout<<"Real:";
+//     is>>c.real;
+//     cout<<"Imaginary:";
+//     is>>c.imag;
+// }
+// 
+// This error means you still haven't formed good habits when you code, just like you forget "delete", forget "close" file.
+// Be careful
+//
+// 2.  Other parts are good
 // =====================================================================================
 // 
 //       Filename:  Ex07_main.cpp

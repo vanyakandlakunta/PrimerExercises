@@ -1,3 +1,13 @@
+// REVIEW: 
+// IMPORTANT: you didn't "close" your fout
+//
+// This error is really serious. just like you didn't delete memory that you "new"ed
+//
+// Write a "close" right after you "open", write a delete right after you "new"
+// Just like write a "}" right after you type in "{"
+//
+// Other parts are good.
+//
 // =====================================================================================
 // 
 //       Filename:  Ex01_main.cpp

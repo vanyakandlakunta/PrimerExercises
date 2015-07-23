@@ -1,3 +1,8 @@
+// REVIEW:
+//
+// for the operators + - *, you only update the "pounds" in both two modes. 
+//
+// This will cause a bug when you try to cout it later, because you didn't update s.stone and s.pds_left
 // =====================================================================================
 // 
 //       Filename:  Ex05_main.cpp
